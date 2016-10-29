@@ -1,13 +1,15 @@
+[![Build Status](https://travis-ci.org/MainAero/gilded-rose-kata.svg?branch=master)](https://travis-ci.org/MainAero/gilded-rose-kata)
+[![Code Climate](https://codeclimate.com/github/MainAero/gilded-rose-kata/badges/gpa.svg)](https://codeclimate.com/github/MainAero/gilded-rose-kata)
+[![Test Coverage](https://codeclimate.com/github/MainAero/gilded-rose-kata/badges/coverage.svg)](https://codeclimate.com/github/MainAero/gilded-rose-kata/coverage)
 # The Gilded Rose Code Kata
+
+My refactored solution for the [changed](https://github.com/eykd/gilded-rose-kata) gilded rose code kata.
+The branch `original` has the non-refactored version.
 
 This is a Python version of the Gilded Rose Kata, based on the Ruby version
 found [here](https://github.com/jimweirich/gilded_rose_kata/), based on the
 original found
 [here](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/).
-
-This is a refactoring kata, so you will be starting with a legacy code base.
-To work the Kata, clone this git repository. Read the description below for the
-"rules" involving this kata.
 
 ## Changes from the original
 
@@ -30,28 +32,18 @@ You can read
 
 The easiest way is to use pip to install the dependencies:
 
-    pip install -r requirements.txt
+    make install
 
 
 ## Running the tests
 
-To run the tests, make sure [Behave](http://behave.readthedocs.org/en/latest/)
-is installed (see Installation, above), then run:
+Only tests
 
-    behave
+    make test
 
-You will see that there are three failing tests, for the newly introduced
-Conjured items. Your mission, should you choose to accept it, is to make those
-tests pass. Good luck with that.
+with coverage report
 
-
-## Git Branches
-
-* The 'master' branch contains the starting point for the kata.
-
-Hope you enjoy this.     -- Jim Weirich, 2011
-
-Thanks, Jim.     -- David Eyk, 2014
+    make test-with-coverage
 
 
 # Original Description of the Gilded Rose

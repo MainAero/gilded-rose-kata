@@ -1,0 +1,30 @@
+---
+exclude_paths:
+    - "venv/"
+    - "vendor/"
+
+engines:
+
+    pep8:
+        enabled: true
+    
+    radon:
+        enabled: true
+        config:
+            python_version: 2
+
+    fixme:
+        enabled: true
+
+    duplication:
+        enabled: true
+        exclude_paths:
+            - "features/"
+        config:
+            languages:
+                - python
+
+ratings:
+    paths:
+        - "**.py"
+

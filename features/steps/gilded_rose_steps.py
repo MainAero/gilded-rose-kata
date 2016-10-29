@@ -33,7 +33,9 @@ def update_item_quality_step_impl(context):
 
 @then(u'the item\'s {attr} should be less {n:d}')
 def attr_should_be_less_n_step_impl(context, attr, n):
-    ensure(getattr(context.item, attr)).equals(getattr(context, "initial_" + attr) - n)
+    ensure(getattr(context.item, attr)).equals(
+        getattr(context, "initial_" + attr) - n
+    )
 
 
 @then(u'the item\'s {attr} should be {n:d}')
@@ -43,4 +45,6 @@ def attr_should_be_n_step_impl(context, attr, n):
 
 @then(u'the item\'s {attr} should increase by {n:d}')
 def attr_should_be_less_n_step_impl(context, attr, n):
-    ensure(getattr(context.item, attr)).equals(getattr(context, "initial_" + attr) + n)
+    ensure(getattr(context.item, attr)).equals(
+        getattr(context, "initial_" + attr) + n
+    )

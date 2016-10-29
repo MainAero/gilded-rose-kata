@@ -1,2 +1,5 @@
 behave
 ensure
+coverage
+virtualenv
+codeclimate-test-reporter
